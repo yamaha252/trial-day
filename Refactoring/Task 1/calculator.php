@@ -1,58 +1,61 @@
- <?php
- 
- // Refactoring
- public class Calclulator 
- [
- 
-	public function plus ($a, $b){
-		$result = $a + $b;
-		return $a + $b
-	}
-	
-	
-	
-	
-	public function Minus($Zahl1, $zahl2, $Zahl3)
-	{
-		return $Zahl1-$zahl2; // Calculates $zahl1-$tahl2
-	}
-	public static function SubTract ($a, $b){
-		return $a - $b;
-	}
-	
-	
-	
-	public function squareRoot($a)
-	{
-		return $a*$a;
-		}
+<?php
 
-	
-	/**
-	 * Berechnet eine division:
-	 * @param int $value Divisor
-	 * @param int $value2 Divident
-	 * @return double
-	 */
-	public static function Calculate($value, $value2)
-	{
-		$result = $value / $value2;
-		return $result;
-	}
-	
-	
-	/** Divdes two values */
-	private function multiply_values($number, $nummer){
-		$result=$number*$nummer;
-		return $result;
-	}
-	
-	
-	/**
-	 * Needed until 2013-03-01 for backwards compatibility
-	 */
-	private function output($line) {
-		echo $line;
-	}
-	
+/**
+ * Class Calculator
+ */
+class Calculator
+{
+    /**
+     * Addition of two numbers
+     * @param $a
+     * @param $b
+     * @return float
+     */
+    public static function plus(float $a, float $b): float
+    {
+        return $a + $b;
+    }
+
+    /**
+     * Subtraction of two numbers
+     * @param float $a
+     * @param float $b
+     * @return float
+     */
+    public static function minus(float $a, float $b): float
+    {
+        return $a - $b;
+    }
+
+    /**
+     * Multiplication of two numbers
+     * @param float $a
+     * @param float $b
+     * @return float
+     */
+    public static function multiply(float $a, float $b): float
+    {
+        return $a * $b;
+    }
+
+    /**
+     * Division of two numbers
+     * @param float $a
+     * @param float $b
+     * @return float
+     */
+    public static function divide(float $a, float $b): float
+    {
+        return $a / $b;
+    }
+
+    /**
+     * Square root of the number
+     * @param float $a
+     * @return float
+     */
+    public static function squareRoot(float $a): float
+    {
+        return sqrt($a);
+    }
 }
