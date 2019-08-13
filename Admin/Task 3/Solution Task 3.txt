@@ -1,0 +1,3 @@
+$ touch filename.txt
+$ chmod 660 filename.txt
+$ chown root:devuser filename.txt
