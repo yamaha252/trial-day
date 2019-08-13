@@ -1,0 +1,10 @@
+-----------------------------------------------
+Frontend Task 1 - Scrolling
+-----------------------------------------------
+
+Create an html page based on the design shown in design.jpg
+
+Requirements:
+- Only the box "Headhunter auf Ihrem Profil" needs to be real html
+- The arrow buttons should only be visible if the mouse is inside the box "Headhunter auf Ihrem Profil"
+- If the buttons are pressed the headhunters should scroll up / down.

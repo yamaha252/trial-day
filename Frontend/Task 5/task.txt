@@ -1,0 +1,23 @@
+
+-----------------------------------------------
+  Frontend Mail task
+-----------------------------------------------
+
+
+Create a responsive mail page based on the design files found in the Design/Export folder.
+Mobile and Desktop-Designs are given. There is only one breakingpoint at “max-width: 620px” from
+the fixed layout to the fluid mobile.
+
+
+Requirements:
+
+  - Use Arial as base-font.
+  - Adaptive page design. Breakpoint at (620px), or one you consider more reasonable.
+
+
+Bonus:
+
+  - Implement Fira Sans as base typo.
+  
+
+If you have questions… ask. Thanks

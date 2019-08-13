@@ -1,0 +1,25 @@
+
+-----------------------------------------------
+  Frontend task
+-----------------------------------------------
+
+
+Create a responsive html page based on the design files found in the Design/Export folder.
+Mobile and Desktop-Designs are given, tablets are up to your creativity.
+
+
+Requirements:
+
+  - Implement Fira Sans as base typo.
+  - Adaptive page design is a minimum, for tablets please find your own design solution.
+    We prefer fluid page design.
+  - The bottom dark section with profiles should contain a slider. Other pages can be filled with dummy text.
+
+
+Bonus:
+
+  - Add icons and list elements via glyphicons-webfont.
+  - If you have time add CSS-animations so that the content flies in or is shown in a cool way.
+  
+jQuery, bootstrap, SASS, GSAP and other similar libraries can be used.
+You can also use the "css-mediaQueries.txt" if you like.
