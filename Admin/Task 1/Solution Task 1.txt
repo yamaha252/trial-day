@@ -1,0 +1,1 @@
+$ docker build -t apache . && docker run -d -p 80:80 apache
