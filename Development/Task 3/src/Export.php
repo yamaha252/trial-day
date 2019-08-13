@@ -7,33 +7,15 @@ use Formatter\XMLShortFormatter;
 use Model\Job;
 use PHPMailer\PHPMailer\PHPMailer;
 
-class ExportType
-{
-    /**
-     * Full CSV
-     */
-    const CSV = 'csv';
-
-    /**
-     * Full XML
-     */
-    const XML = 'xml';
-
-    /**
-     * XML short description
-     */
-    const XML_SHORT = 'xmls';
-}
-
 class Export
 {
     /**
      * @var Formatter[]
      */
     private $formatters = [
-        ExportType::CSV => CSVFormatter::class,
-        ExportType::XML => XMLFormatter::class,
-        ExportType::XML_SHORT => XMLShortFormatter::class,
+        ExportFormat::CSV => CSVFormatter::class,
+        ExportFormat::XML => XMLFormatter::class,
+        ExportFormat::XML_SHORT => XMLShortFormatter::class,
     ];
 
     /**
