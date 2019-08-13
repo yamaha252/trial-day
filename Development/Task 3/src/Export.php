@@ -1,5 +1,9 @@
 <?php
 
+use Formatter\CSVFormatter;
+use Formatter\Formatter;
+use Formatter\XMLFormatter;
+use Formatter\XMLShortFormatter;
 use Model\Job;
 
 class ExportType
@@ -44,6 +48,7 @@ class Export
     /**
      * Return file as attachment
      * @throws \Doctrine\ORM\ORMException
+     * @throws UndefinedConfigParam
      */
     function export()
     {
@@ -56,6 +61,7 @@ class Export
     /**
      * @return Job[]
      * @throws \Doctrine\ORM\ORMException
+     * @throws UndefinedConfigParam
      */
     private function getData()
     {
@@ -82,6 +88,7 @@ class Export
     /**
      * @return string
      * @throws \Doctrine\ORM\ORMException
+     * @throws UndefinedConfigParam
      */
     private function getContent(): string
     {
