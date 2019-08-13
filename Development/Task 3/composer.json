@@ -9,7 +9,8 @@
     "name": "sergey/task",
     "type": "project",
     "require": {
-        "doctrine/orm": "^2.6"
+        "doctrine/orm": "^2.6",
+        "phpmailer/phpmailer": "^6.0"
     },
     "authors": [
         {

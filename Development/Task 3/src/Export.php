@@ -5,6 +5,7 @@ use Formatter\Formatter;
 use Formatter\XMLFormatter;
 use Formatter\XMLShortFormatter;
 use Model\Job;
+use PHPMailer\PHPMailer\PHPMailer;
 
 class ExportType
 {
@@ -56,6 +57,17 @@ class Export
         header('Content-Type: ' . $this->getMimeType());
         echo $this->getContent();
         exit;
+    }
+
+    function sendToEmail(string $email)
+    {
+        $mail = new PHPMailer(true);
+        $mail->addAddress($email);
+        $mail->setFrom('somebody@trialday.com');
+        $mail->Subject = 'Export is done';
+        $mail->Body = "Hello! \r\n You can find the exported file in the attachments";
+        $mail->addStringAttachment($this->getContent(), $this->getFileName(), PHPMailer::ENCODING_BASE64, $this->getMimeType());
+        $mail->send();
     }
 
     /**
